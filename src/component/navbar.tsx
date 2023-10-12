@@ -13,6 +13,8 @@ const router = useRouter();
           <button onClick={()=>router.push('/')}>Bosh sahifa</button>
           <button onClick={()=>router.push('/about')}>Men haqimda</button>
           <button onClick={()=>router.push('/contact')}>Bog'lanish</button>
+          <button onClick={()=>router.push('/post')}>Post</button>
+
 
         </div>
     )

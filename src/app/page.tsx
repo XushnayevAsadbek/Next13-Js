@@ -1,5 +1,4 @@
 import Home from "@/component/home"
-import React from "react"
 
 
 const HomePage =() =>{
