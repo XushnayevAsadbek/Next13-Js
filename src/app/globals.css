@@ -3,7 +3,7 @@
   justify-content: space-around;
  
 }
-.navbar.a{
+.navbar a{
   text-decoration: none;
-  color: #808080;
+  color: #000;
 }
