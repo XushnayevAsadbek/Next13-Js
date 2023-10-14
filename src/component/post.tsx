@@ -4,13 +4,27 @@ import { FC } from "react";
 
 const Post:FC<{data: PostType[] }> =({data})=>{
     return(
-        <div>
-        {data.map(c=>(
-        <div key={c.id}>
-            <Link  href={`/posts/${c.id}`}>{c.title}</Link>
-        </div>
+        <table border={1}>
+            <thead>
+                <th>id</th>
+                <th>title</th>
+            </thead>
+            <tbody>
+            
+                {data.map(c=>(
+        <tr key={c.id}>
+            <td>
+                {c.id}
+            </td>
+           <td>
+             <Link  href={`/post
+             /${c.id}`}>{c.title}</Link>
+           </td>
+        </tr>
     ))}
-    </div>
+                
+            </tbody>
+    </table>
     )
 }
 export default Post;
