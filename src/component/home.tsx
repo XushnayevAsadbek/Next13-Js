@@ -34,7 +34,7 @@ const Home = () =>{
         {loading? 'Loading...'
         :post.map(c=>(
             <div key={c.id}>
-                <Link href={`/posts/${c.id}`}>{c.title}</Link>
+                <Link href={`/post/${c.id}`}>{c.title}</Link>
             </div>
         ))}
         <div>

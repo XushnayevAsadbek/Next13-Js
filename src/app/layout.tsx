@@ -1,10 +1,10 @@
-
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 // import Link from 'next/link'
 // import { useRouter } from 'next/navigation';
 import Navbar from '@/component/navbar';
+import Provider from './provider';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
 
-       <Navbar/>
+      <Provider>
+      <Navbar/>
          {/* <div className='navbar'>
         <Link href={'/'} >Bosh sahifa</Link>
         <Link href={'/about'} >Men haqimda</Link>
@@ -32,6 +33,7 @@ export default function RootLayout({
         </div> */}
         {children} 
       Footer 
+      </Provider>
       </body>
     </html>
   )
